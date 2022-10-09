@@ -25,82 +25,101 @@
       <div class="estatistica">
         <p class="estatistica-titulo">Ataque</p>
         <div class="estatistica-valor">
-          <p class="estatistica-numero" data-estatisticas>0</p>
+          <p class="estatistica-numero" data-atributo="ataque">0</p>
         </div>
       </div>
       <div class="estatistica">
         <p class="estatistica-titulo">Velocidade</p>
         <div class="estatistica-valor">
-          <p class="estatistica-numero" data-estatisticas>0</p>
+          <p class="estatistica-numero" data-atributo="velocidade">0</p>
         </div>
       </div>
       <div class="estatistica">
         <p class="estatistica-titulo">Magia</p>
         <div class="estatistica-valor">
-          <p class="estatistica-numero" data-estatisticas>0</p>
+          <p class="estatistica-numero" data-atributo="magia">0</p>
         </div>
       </div>
       <div class="estatistica">
         <p class="estatistica-titulo">Defesa</p>
         <div class="estatistica-valor">
-          <p class="estatistica-numero" data-estatisticas>0</p>
+          <p class="estatistica-numero" data-atributo="defesa">0</p>
         </div>
       </div>
     </section>
     <section class="habilidades">
       <form action="" class="montador">
         <div class="box montador-conteudo">
+            <!-- aqui você precisa colocar o valor do for que deve ser o id de um elemento para que o html saiba que essa label se refere a X elemento, o que facilita a navegador de pessoas com deficiencias visuais e afins -->
+            <!-- Você também pode deixar sem o for e colocar tudo dentro da label, exemplo: -->
+            <!-- 
+            <label class="peca-titulo">
+              <p>Destreza</p>
+              <div class="controle">
+                <buttom class="controle-ajuste" data-controle="sub">-</buttom>
+                <input type="text" class="controle-contador" value="0" id="destreza"/>
+                <buttom class="controle-ajuste" data-controle="sum">+</buttom>
+              </div>
+            </label>  
+            *Eu particularmente prefiro assim*
+            -->
+
           <div class="peca">
             <label for="" class="peca-titulo">Força</label>
-            <div class="controle">
-              <buttom class="controle-ajuste" id="subtrair" data-controle="-">-</buttom>
-              <input type="text" class="controle-contador" value="0" id="forca" data-contador />
-              <buttom class="controle-ajuste" data-controle="+">+</buttom>
+            <div class="controle" data-hab="forca">
+              <buttom class="controle-ajuste" id="subtrair" data-controle="sub">-</buttom>
+              <input type="text" class="controle-contador" value="0" id="forca"/>
+              <buttom class="controle-ajuste" data-controle="sum">+</buttom>
             </div>
           </div>
+
           <hr class="linha" />
           <div class="peca">
             <label for="" class="peca-titulo">Destreza</label>
-            <div class="controle">
-              <buttom class="controle-ajuste" data-controle="-">-</buttom>
-              <input type="text" class="controle-contador" value="0" id="destreza" data-contador />
-              <buttom class="controle-ajuste" data-controle="+">+</buttom>
+            <div class="controle" data-hab="destreza">
+              <buttom class="controle-ajuste" data-controle="sub">-</buttom>
+              <input type="text" class="controle-contador" value="0" id="destreza"/>
+              <buttom class="controle-ajuste" data-controle="sum">+</buttom>
             </div>
           </div>
+
           <hr class="linha" />
           <div class="peca">
             <label for="" class="peca-titulo">Constituição</label>
-            <div class="controle">
-              <buttom class="controle-ajuste" data-controle="-">-</buttom>
-              <input type="text" class="controle-contador" value="0" id="constituicao" data-contador />
-              <buttom class="controle-ajuste" data-controle="+">+</buttom>
+            <div class="controle" data-hab="constituicao">
+              <buttom class="controle-ajuste" data-controle="sub">-</buttom>
+              <input type="text" class="controle-contador" value="0" id="constituicao"/>
+              <buttom class="controle-ajuste" data-controle="sum">+</buttom>
             </div>
           </div>
+
           <hr class="linha" />
           <div class="peca">
             <label for="" class="peca-titulo">Inteligência</label>
-            <div class="controle">
-              <buttom class="controle-ajuste" data-controle="-">-</buttom>
-              <input type="text" class="controle-contador" value="0" id="inteligencia" data-contador />
-              <buttom class="controle-ajuste" data-controle="+">+</buttom>
+            <div class="controle" data-hab="inteligencia">
+              <buttom class="controle-ajuste" data-controle="sub">-</buttom>
+              <input type="text" class="controle-contador" value="0" id="inteligencia"/>
+              <buttom class="controle-ajuste" data-controle="sum">+</buttom>
             </div>
           </div>
+
           <hr class="linha" />
           <div class="peca">
             <label for="" class="peca-titulo">Sabedoria</label>
-            <div class="controle">
-              <buttom class="controle-ajuste" data-controle="-">-</buttom>
-              <input type="text" class="controle-contador" value="0" id="sabedoria" data-contador />
-              <buttom class="controle-ajuste" data-controle="+">+</buttom>
+            <div class="controle" data-hab="sabedoria">
+              <buttom class="controle-ajuste" data-controle="sub">-</buttom>
+              <input type="text" class="controle-contador" value="0" id="sabedoria"/>
+              <buttom class="controle-ajuste" data-controle="sum">+</buttom>
             </div>
           </div>
+
           <hr class="linha" />
           <div class="peca">
             <label for="" class="peca-titulo">Carisma</label>
-            <div class="controle">
-              <buttom class="controle-ajuste" data-controle="-">-</buttom>
-              <input type="text" class="controle-contador" value="0" id="carisma" data-contador />
-              <buttom class="controle-ajuste" data-controle="+">+</buttom>
+            <div class="controle" data-hab="carisma">
+              <buttom class="controle-ajuste" data-controle="sub">-</buttom>
+              <input type="text" class="controle-contador" value="0" id="carisma"/>
+              <buttom class="controle-ajuste" data-controle="sum">+</buttom>
             </div>
           </div>
         </div>

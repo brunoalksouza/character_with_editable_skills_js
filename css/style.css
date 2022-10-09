@@ -124,6 +124,7 @@ main {
 }
 
 .controle-ajuste {
+  user-select: none;
   display: inline-block;
   width: 40px;
   height: 40px;
