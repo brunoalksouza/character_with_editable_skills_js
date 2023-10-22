@@ -24,21 +24,5 @@ git clone https://github.com/user-name/repository-name.git
 ```
 
 <p>
-Navigate to the repository directory:
-</p>
-
-```
-cd repository name
-```
-
-<p>
-Install all the dependencies:
-</p>
-
-```
-npm i
-```
-
-<p>
 Open the index.html from the project in your browser and just have fun
 </p>
