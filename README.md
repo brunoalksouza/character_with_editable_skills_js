@@ -16,7 +16,7 @@ Make sure you have NODE, NPM and Git installed on your system.
 
 ## How to use
 <p>
-Make sure you have Node and Git installed on your system.
+Clone this repository to your system:
 </p>
 
 ```
