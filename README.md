@@ -1,4 +1,4 @@
-#  RPG character with editable skills
+#  RPG Character With Editable Skills
 <p>
 That is just an webpage made with HTML and CSS taht you can change the values of your character like strength, dexterity, constitution, intelligence, wisdom and charisma. 
 This can be very useful in your circle of friends who play RPG, I can continue if anyone finds it interesting to use in their daily lives.
